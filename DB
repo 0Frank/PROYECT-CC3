@@ -1,0 +1,4 @@
+ALTER TABLE tienda_virtual.detalle_pedido ADD CONSTRAINT FOREIGN key(idPedido) REFERENCES tienda_virtual.pedido(idPedido)
+ALTER TABLE tienda_virtual.detalle_pedido ADD CONSTRAINT FOREIGN key(idProducto) REFERENCES tienda_virtual.producto(idProducto)
+ALTER TABLE tienda_virtual.producto ADD CONSTRAINT FOREIGN key(idCategoria) REFERENCES tienda_virtual.categoria(idCategoria)
+ALTER TABLE tienda_virtual.pedido ADD CONSTRAINT FOREIGN key(idUser) REFERENCES tienda_virtual.usuario(idUsuario)
